@@ -12,17 +12,25 @@
 			<script src="js/popper.min.js" ></script>
 			<script src="js/bootstrap.min.js" ></script>
 	-->      
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	       
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
 	<!--iconos-->
 	<script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
 	<link href="https://unpkg.com/ionicons@4.2.4/dist/css/ionicons.min.css" rel="stylesheet">
+
+
 
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -51,6 +59,24 @@
 
 	.imgContainer {
 		width: 85%;
+	}
+
+	.dropdown-submenu {
+	  position: relative;
+	}
+
+	.dropdown-submenu>a:after {
+	  /*content: "\f0da";*/
+	  /*float: right;*/
+	  border: none;
+	  /*font-family: 'FontAwesome';*/
+	}
+
+	.dropdown-submenu>.dropdown-menu {
+	  top: 0;
+	  left: 100%;
+	  margin-top: 0px;
+	  margin-left: 0px;
 	}
 
 	/*.container-fluid {
@@ -87,28 +113,107 @@
 					<li class="nav-item align-self-left" style="padding: 0 20px; ">
 						<a href="index.html"><img src="img/TS.png" class="logoOCJ"></a>
 					</li>
-					<li class="nav-item align-self-center dropdown" style="padding: 0 20px;">
-					  	<a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tecnología en el Tec</a>
+					<li class="nav-item dropdown align-self-center" style="padding: 0 20px;"> <!--align-self-center -->
+					  	<a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="tecnologias">Tecnología en el Tec</a>
 						<!-- <a class="nav-link text-white" href="conoce.html">CONOCE EL PROGRAMA</a> -->
-						<div class="dropdown-menu dropdown">
-							<a class="dropdown-item" href="">Mejores Herramientas</a>
-							<a class="dropdown-item" href="mostla.html">MOSTLA</a>
-							<a class="dropdown-item" href="redlab.html">REDLab</a>
-							<a class="dropdown-item" href="">Ciberseguridad</a>
-							<a class="dropdown-item" href="lineamientos.html">Adobe</a>
-							<a class="dropdown-item" href="">Microsoft</a>
-							<a class="dropdown-item dropdown-submenu dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Transformación Digital</a>
+						<ul class="dropdown-menu dropright" aria-labelledby="tecnologias">
+							<li><a class="dropdown-item" href="">Mejores Herramientas</a></li>
+							<!-- <li><a class="dropdown-item" href="mostla.html">MOSTLA</a></li> -->
 
-							<div class="dropdown-menu">
-								<a class="dropdown-item" href="">Teams</a>
-								<a class="dropdown-item" href="">Outlook</a>
-								<a class="dropdown-item" href="">Excel</a>
-								<a class="dropdown-item" href="">Word</a>
-								<a class="dropdown-item" href="">Power Point</a>
-								<a class="dropdown-item" href="">OneDrive</a>
-								<a class="dropdown-item" href="">OneNote</a>
-							</div>
-						</div>
+							<li class="dropdown-submenu">
+								<a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="mostla">MOSTLA</a>
+
+								<ul aria-labelledby="mostla" class="dropdown-menu">
+									<li>
+					                 	<a  href="#" class="dropdown-item">Blockchain</a>
+					                </li>
+					                <li>
+					                 	<a  href="#" class="dropdown-item">Inteligencia Artificil</a>
+					                </li>
+					                <li>
+					                 	<a  href="#" class="dropdown-item">Realidad Virtual</a>
+					                </li>
+								</ul>
+							</li>
+
+							<!-- <li><a class="dropdown-item" href="redlab.html">REDLab</a></li> -->
+							<li class="dropdown-submenu">
+								<a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="redlab">REDLab</a>
+
+								<ul aria-labelledby="redlab" class="dropdown-menu">
+									<li>
+					                 	<a  href="#" class="dropdown-item">Eye-tracking</a>
+					                </li>
+					                <li>
+					                 	<a  href="#" class="dropdown-item">Cámaras para Fotografía 360°</a>
+					                </li>
+					                <li>
+					                 	<a  href="#" class="dropdown-item">Dispositivo biométrico (GSR)</a>
+					                </li>
+								</ul>
+							</li>
+
+							<!-- <li><a class="dropdown-item" href="">Ciberseguridad</a></li> -->
+							<li class="dropdown-submenu">
+								<a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="ciber">Ciberseguridad</a>
+
+								<ul aria-labelledby="ciber" class="dropdown-menu">
+									<li>
+					                 	<a  href="#" class="dropdown-item">Tips</a>
+					                </li>
+					                <li>
+					                 	<a  href="#" class="dropdown-item">Comunicados</a>
+					                </li>
+								</ul>
+							</li>
+
+							<!-- <li><a class="dropdown-item" href="lineamientos.html">Adobe</a></li> -->
+							<li class="dropdown-submenu">
+								<a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="adobe">Adobe</a>
+
+								<ul aria-labelledby="adobe" class="dropdown-menu">
+									<li>
+					                 	<a  href="#" class="dropdown-item">Photoshop</a>
+					                </li>
+					                <li>
+					                 	<a  href="#" class="dropdown-item">Ilustrador</a>
+					                </li>
+					                <li>
+					                 	<a  href="#" class="dropdown-item">Premier</a>
+					                </li>
+								</ul>
+							</li>
+
+							<!-- <li><a class="dropdown-item" href="">Microsoft</a></li> -->
+
+							<li class="dropdown-submenu">
+								<a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" id="msft">Microsoft</a>
+
+								<ul aria-labelledby="msft" class="dropdown-menu">
+									<li>
+					                 	<a  href="#" class="dropdown-item">Teams</a>
+					                </li>
+					                <li>
+					                 	<a  href="#" class="dropdown-item">Outlook</a>
+					                </li>
+					                <li>
+					                 	<a  href="#" class="dropdown-item">Excel</a>
+					                </li>
+					                <li>
+					                 	<a  href="#" class="dropdown-item">Word</a>
+					                </li>
+					                <li>
+					                 	<a  href="#" class="dropdown-item">Power Point</a>
+					                </li>
+					                <li>
+					                 	<a  href="#" class="dropdown-item">OneDrive</a>
+					                </li>
+					                <li>
+					                 	<a  href="#" class="dropdown-item">OneNote</a>
+					                </li>
+								</ul>
+							</li>
+						</ul>
 					</li>
 
 					<li class="nav-item align-self-center" style="padding: 0 20px;">
@@ -250,6 +355,30 @@
  			
 		</div>
   	</footer>
+
+  	<script type="text/javascript">
+  		$(function() {
+		  // ------------------------------------------------------- //
+		  // Multi Level dropdowns
+		  // ------------------------------------------------------ //
+		  $("ul.dropdown-menu [data-toggle='dropdown']").on("click", function(event) {
+		    event.preventDefault();
+		    event.stopPropagation();
+
+		    $("li.dropdown-submenu ul.dropdown-menu").removeClass("show");
+		    $(this).siblings().toggleClass("show");
+
+
+		    // if (!$(this).next().hasClass('show')) {
+		    //   $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+		    // }
+		    // $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+		    //   $('.dropdown-submenu .show').removeClass("show");
+		    // });
+
+		  });
+		});
+  	</script>
 
 </body>
 </html>
